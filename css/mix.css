@@ -1,0 +1,330 @@
+/* line 22, ../sass/mix.scss */
+.fifteen {
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 0;
+  width: 100%;
+}
+
+/* line 27, ../sass/mix.scss */
+.left-aside {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 25.52083%;
+  background: #e1e1e1;
+  height: 200px;
+  position: relative;
+  z-index: 100;
+  opacity: 0.7;
+}
+
+/* line 37, ../sass/mix.scss */
+.left-seven {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 45.83333%;
+  position: relative;
+  z-index: 100;
+}
+
+/* line 44, ../sass/mix.scss */
+.large-p {
+  margin-left: 57.21866%;
+}
+
+/* line 47, ../sass/mix.scss */
+.content, .wrap {
+  display: block;
+  float: left;
+  margin-left: 20.3125%;
+  margin-right: -100%;
+  width: 79.6875%;
+}
+
+/* line 54, ../sass/mix.scss */
+.twelve {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 100%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.96078%;
+}
+/* line 58, ../sass/mix.scss */
+.twelve:last-of-type {
+  margin-right: 0;
+}
+
+/* line 65, ../sass/mix.scss */
+.eleven {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 91.50327%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.96078%;
+}
+/* line 69, ../sass/mix.scss */
+.eleven:last-of-type {
+  margin-right: 0;
+}
+
+/* line 76, ../sass/mix.scss */
+.ten {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 83.00654%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.96078%;
+}
+/* line 80, ../sass/mix.scss */
+.ten:last-of-type {
+  margin-right: 0;
+}
+
+/* line 86, ../sass/mix.scss */
+.nine {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 74.5098%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.96078%;
+}
+/* line 90, ../sass/mix.scss */
+.nine:last-of-type {
+  margin-right: 0;
+}
+
+/* line 96, ../sass/mix.scss */
+.eight {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 65.77492%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 100, ../sass/mix.scss */
+.eight:last-of-type {
+  margin-right: 0;
+}
+
+/* line 106, ../sass/mix.scss */
+.seven {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 57.21866%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 110, ../sass/mix.scss */
+.seven:last-of-type {
+  margin-right: 0;
+}
+
+/* line 116, ../sass/mix.scss */
+.six {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 48.66239%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 120, ../sass/mix.scss */
+.six:last-of-type(2n+1) {
+  margin-right: 0;
+}
+
+/* line 126, ../sass/mix.scss */
+.five {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 40.10612%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 130, ../sass/mix.scss */
+.five:last-of-type {
+  margin-right: 0;
+}
+
+/* line 135, ../sass/mix.scss */
+.five-in-ten {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 48.38623%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 3.22754%;
+  margin-left: 3%;
+  margin-right: 0;
+}
+
+/* line 141, ../sass/mix.scss */
+.five-in-ten-right {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 48.38623%;
+  clear: none;
+  float: right;
+  margin-right: 0;
+  margin-left: 3.22754%;
+  margin-left: 0%;
+  margin-right: 0;
+}
+
+/* line 152, ../sass/mix.scss */
+.four {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 31.54985%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 157, ../sass/mix.scss */
+.four:last-of-type {
+  margin-right: 0;
+}
+
+/* line 164, ../sass/mix.scss */
+.four-in-ten {
+  display: block;
+  float: left;
+  margin-left: 10.32275%;
+  margin-right: -100%;
+  width: 38.06347%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 3.22754%;
+}
+
+/* line 170, ../sass/mix.scss */
+.three {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 22.99358%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 174, ../sass/mix.scss */
+.three:last-of-type {
+  margin-right: 0;
+}
+
+/* line 180, ../sass/mix.scss */
+.two {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 14.43731%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 184, ../sass/mix.scss */
+.two:last-of-type {
+  margin-right: 0;
+}
+
+/* line 190, ../sass/mix.scss */
+.one {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 5.88104%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 194, ../sass/mix.scss */
+.one:last-of-type {
+  margin-right: 0;
+}
+
+/* line 201, ../sass/mix.scss */
+.one-in-ten {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 7.09521%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 3.22754%;
+}
+
+/* line 208, ../sass/mix.scss */
+.float-right {
+  clear: none;
+  float: right;
+  margin-right: 0;
+  margin-left: 2.12766%;
+  margin-left: 0;
+}
+
+/* line 213, ../sass/mix.scss */
+.float-left {
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.12766%;
+  margin-left: 0;
+}
+
+/* line 219, ../sass/mix.scss */
+.no-margin {
+  margin: 0px;
+}
