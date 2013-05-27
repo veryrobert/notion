@@ -27,92 +27,92 @@ html, body, h1, div, div, a, li, ul {
   list-style-type: none;
 }
 
-/* line 33, ../../sass/styles/screen.scss */
+/* line 34, ../../sass/styles/screen.scss */
 nav, footer {
   height: 100px;
 }
-/* line 35, ../../sass/styles/screen.scss */
+/* line 36, ../../sass/styles/screen.scss */
 nav li, footer li {
   display: inline;
   list-style: none;
   padding: 0 30px 0 0;
 }
-/* line 37, ../../sass/styles/screen.scss */
+/* line 38, ../../sass/styles/screen.scss */
 nav li li.float-right, footer li li.float-right {
   display: inline;
   list-style: none;
   padding-left: 0 0 0 30px;
 }
 
-/* line 45, ../../sass/styles/screen.scss */
+/* line 46, ../../sass/styles/screen.scss */
 header {
   margin: 0 auto;
   width: 90%;
   display: block;
 }
 
-/* line 47, ../../sass/styles/screen.scss */
+/* line 48, ../../sass/styles/screen.scss */
 img {
   width: 100%;
   padding: 10px 0;
 }
 
-/* line 49, ../../sass/styles/screen.scss */
+/* line 50, ../../sass/styles/screen.scss */
 .row {
   margin: 0 auto;
   width: 90%;
   display: block;
 }
 
-/* line 51, ../../sass/styles/screen.scss */
+/* line 52, ../../sass/styles/screen.scss */
 .twelve img {
   padding: 0px 0px 10px 0px;
 }
 
-/* line 53, ../../sass/styles/screen.scss */
+/* line 54, ../../sass/styles/screen.scss */
 .panel {
   float: left;
   width: 100%;
   display: block;
 }
 
-/* line 57, ../../sass/styles/screen.scss */
+/* line 58, ../../sass/styles/screen.scss */
 p .four {
   clear: both;
 }
 
-/* line 61, ../../sass/styles/screen.scss */
+/* line 62, ../../sass/styles/screen.scss */
 .case-study, .studio {
   color: white;
   background: #3e454c;
 }
-/* line 63, ../../sass/styles/screen.scss */
+/* line 64, ../../sass/styles/screen.scss */
 .case-study .container, .studio .container {
   display: block;
   float: left;
 }
-/* line 66, ../../sass/styles/screen.scss */
+/* line 67, ../../sass/styles/screen.scss */
 .case-study p, .case-study h2, .case-study h3, .case-study h4, .case-study a, .case-study li, .studio p, .studio h2, .studio h3, .studio h4, .studio a, .studio li {
   color: white;
 }
 
-/* line 70, ../../sass/styles/screen.scss */
+/* line 71, ../../sass/styles/screen.scss */
 .studio .left-seven p {
   position: relative;
   top: 360px;
 }
 
-/* line 76, ../../sass/styles/screen.scss */
+/* line 77, ../../sass/styles/screen.scss */
 .large-p {
   margin-left: -25.25%;
 }
 
-/* line 78, ../../sass/styles/screen.scss */
+/* line 79, ../../sass/styles/screen.scss */
 .five.push-left {
   margin-left: 2.6%;
 }
 
-/* line 82, ../../sass/styles/screen.scss */
+/* line 83, ../../sass/styles/screen.scss */
 .profiles img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -122,7 +122,7 @@ p .four {
   padding: 0px;
 }
 
-/* line 84, ../../sass/styles/screen.scss */
+/* line 85, ../../sass/styles/screen.scss */
 .push-right {
   padding-right: 2.68%;
 }
