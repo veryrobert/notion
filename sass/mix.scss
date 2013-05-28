@@ -132,19 +132,19 @@ z-index: 100;
       }
 }
 
-.five-in-ten {
-@include gs-span(s, 6, 10, (6,15));
-@include gs-float(s, left, (6,15));
-margin-left:3%;  margin-right: 0;
-      }
+// .five-in-ten {
+// @include gs-span(s, 6, 10, (6,15));
+// @include gs-float(s, left, (6,15));
+// margin-left:3%;  margin-right: 0;
+//       }
 
-.five-in-ten-right {
+// .five-in-ten-right {
 
-@include gs-span(s, 6, 10, (6,15));
-@include gs-float(s, right, (6,15));
-margin-left:0%;  margin-right: 0;
+// @include gs-span(s, 6, 10, (6,15));
+// @include gs-float(s, right, (6,15));
+// margin-left:0%;  margin-right: 0;
       
-      }
+//       }
 
 
 

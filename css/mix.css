@@ -182,36 +182,6 @@
   margin-right: 0;
 }
 
-/* line 135, ../sass/mix.scss */
-.five-in-ten {
-  display: block;
-  float: left;
-  margin-left: 0%;
-  margin-right: -100%;
-  width: 48.38623%;
-  clear: none;
-  float: left;
-  margin-left: 0;
-  margin-right: 3.22754%;
-  margin-left: 3%;
-  margin-right: 0;
-}
-
-/* line 141, ../sass/mix.scss */
-.five-in-ten-right {
-  display: block;
-  float: left;
-  margin-left: 0%;
-  margin-right: -100%;
-  width: 48.38623%;
-  clear: none;
-  float: right;
-  margin-right: 0;
-  margin-left: 3.22754%;
-  margin-left: 0%;
-  margin-right: 0;
-}
-
 /* line 152, ../sass/mix.scss */
 .four {
   display: block;
