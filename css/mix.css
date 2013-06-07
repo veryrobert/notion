@@ -282,10 +282,9 @@
   float: right;
   margin-right: 0;
   margin-left: 2.12766%;
-  margin-left: 0;
 }
 
-/* line 213, ../sass/mix.scss */
+/* line 212, ../sass/mix.scss */
 .float-left {
   clear: none;
   float: left;
@@ -294,7 +293,20 @@
   margin-left: 0;
 }
 
-/* line 219, ../sass/mix.scss */
+/* line 218, ../sass/mix.scss */
 .no-margin {
   margin: 0px;
+}
+
+/* line 220, ../sass/mix.scss */
+li.list-of-six {
+  background: aqua;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.67523%;
+}
+/* line 223, ../sass/mix.scss */
+li.list-of-six:nth-child(2n+2) {
+  margin-right: 0px;
 }
