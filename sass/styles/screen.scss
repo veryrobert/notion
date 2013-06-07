@@ -10,26 +10,23 @@
 @mixin list-inline { display: inline; list-style: none; }
 @mixin gutter-push-right { padding-right: 2.68%; }
 
-
 // Simple reset
 html,body,h1,div,div, a, li, ul  {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-	font-family: $font;
-	color:$navy;
-	text-decoration: none;
-	font-style: normal;
-	list-style-type: none;
-
-
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+font-family: $font;
+color:$navy;
+text-decoration: none;
+font-style: normal;
+list-style-type: none;
 }
 
-// changes
+
 // Menu & footer styling 
 nav, footer 	{ height: 100px; 
 
@@ -37,15 +34,16 @@ li 				{ @include list-inline; padding:0 30px 0 0;
 
 li.float-right 	{ @include list-inline; padding-left:0 0 0 30px;
 
-				} } }
-
+} } }
 
 
 // Main styling
 
+p { .four { clear: both; } }
+
 header { @include body-width; }
 
-img { width: $span-full; @include pad-top-bottom; }
+img { width: $span-full; }
 
 .row { @include body-width; }
 
@@ -53,11 +51,8 @@ img { width: $span-full; @include pad-top-bottom; }
 
 .panel { @include full-width }
 
-p {
 
- .four { clear: both; }
-
-}
+//  Dark Blue background styling for font
 
 .case-study, .studio { color:$white; background: $navy;
 
@@ -68,18 +63,8 @@ p, h2, h3, h4, a, li { color:$white; }
 
 }
 
-.studio .left-seven p {
-
-position: relative; top:360px;
-
-}
-
-.large-p {  margin-left:-25.25%; }
-
-.five.push-left {
-margin-left: 2.6%;
-}
-
 .profiles img   { @include border-radius(50%); padding:0px; }
 
-.push-right { @include gutter-push-right; }
+
+
+
