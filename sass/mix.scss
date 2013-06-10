@@ -117,7 +117,7 @@ z-index: 100;
 
 @include gs-span(s, 4, 9, (4,15));
 @include gs-float(s, left, (4,15));
-   &:last-of-type(2n+1) {
+  &:last-of-type {
          margin-right: 0;
       }
 
@@ -207,6 +207,7 @@ z-index: 100;
 
 .float-right {
   @include gs-float(s, right);
+  margin-left: 0;
 }
 
 .float-left {
@@ -224,6 +225,11 @@ background:aqua;
 }
 
 }
+
+.l-clear {
+clear: left;
+}
+
 
 
 
