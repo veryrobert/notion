@@ -1,0 +1,121 @@
+/* _variables.scss */
+/* Colors */
+/* Font */
+/* Fonts-weight */
+/* Padding/Margin/Global Spacing */
+/* _box.scss */
+/* line 3, ../../../sass/_box.scss */
+.box {
+  outline: 1px solid #99999a;
+  *border: 1px solid #99999a;
+  min-height: 50px;
+}
+
+/* line 13, ../../../sass/styles/screen.scss */
+html, body, h1, div, div, a, li, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "ProximaNova-Regular", "Helvetica-neue", Helvetica, Arial, sans-serif;
+  color: #3e454c;
+  text-decoration: none;
+  font-style: normal;
+  list-style-type: none;
+}
+
+/* line 33, ../../../sass/styles/screen.scss */
+nav, footer {
+  height: 100px;
+}
+/* line 35, ../../../sass/styles/screen.scss */
+nav li, footer li {
+  display: inline;
+  list-style: none;
+  padding: 0 30px 0 0;
+}
+/* line 37, ../../../sass/styles/screen.scss */
+nav li li.float-right, footer li li.float-right {
+  display: inline;
+  list-style: none;
+  padding-left: 0 0 0 30px;
+}
+
+/* line 44, ../../../sass/styles/screen.scss */
+.wrapper {
+  margin-top: 150px;
+}
+
+/* line 46, ../../../sass/styles/screen.scss */
+p .four {
+  clear: both;
+}
+
+/* line 48, ../../../sass/styles/screen.scss */
+header {
+  background-color: #eee;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  top: 0px;
+  padding: 40px 0px 0px 0px;
+}
+
+/* line 55, ../../../sass/styles/screen.scss */
+div.nav {
+  margin: 0 auto;
+  width: 90%;
+  display: block;
+}
+
+/* line 57, ../../../sass/styles/screen.scss */
+img {
+  width: 100%;
+}
+
+/* line 59, ../../../sass/styles/screen.scss */
+.row {
+  margin: 0 auto;
+  width: 90%;
+  display: block;
+}
+
+/* line 61, ../../../sass/styles/screen.scss */
+.twelve img {
+  padding: 0px 0px 10px 0px;
+}
+
+/* line 63, ../../../sass/styles/screen.scss */
+.panel {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 69, ../../../sass/styles/screen.scss */
+.case-study, .studio {
+  color: white;
+  background: #3e454c;
+}
+/* line 71, ../../../sass/styles/screen.scss */
+.case-study .container, .studio .container {
+  display: block;
+  float: left;
+}
+/* line 74, ../../../sass/styles/screen.scss */
+.case-study p, .case-study h2, .case-study h3, .case-study h4, .case-study a, .case-study li, .studio p, .studio h2, .studio h3, .studio h4, .studio a, .studio li {
+  color: white;
+}
+
+/* line 78, ../../../sass/styles/screen.scss */
+.profiles img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0px;
+}
