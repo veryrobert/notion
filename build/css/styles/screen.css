@@ -56,7 +56,6 @@ p .four {
 
 /* line 48, ../../../sass/styles/screen.scss */
 header {
-  background-color: #eee;
   position: fixed;
   width: 100%;
   z-index: 200;
@@ -84,33 +83,28 @@ img {
 }
 
 /* line 61, ../../../sass/styles/screen.scss */
-.twelve img {
-  padding: 0px 0px 10px 0px;
-}
-
-/* line 63, ../../../sass/styles/screen.scss */
 .panel {
   float: left;
   width: 100%;
   display: block;
 }
 
-/* line 69, ../../../sass/styles/screen.scss */
+/* line 66, ../../../sass/styles/screen.scss */
 .case-study, .studio {
   color: white;
   background: #3e454c;
 }
-/* line 71, ../../../sass/styles/screen.scss */
+/* line 68, ../../../sass/styles/screen.scss */
 .case-study .container, .studio .container {
   display: block;
   float: left;
 }
-/* line 74, ../../../sass/styles/screen.scss */
+/* line 71, ../../../sass/styles/screen.scss */
 .case-study p, .case-study h2, .case-study h3, .case-study h4, .case-study a, .case-study li, .studio p, .studio h2, .studio h3, .studio h4, .studio a, .studio li {
   color: white;
 }
 
-/* line 78, ../../../sass/styles/screen.scss */
+/* line 75, ../../../sass/styles/screen.scss */
 .profiles img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -118,4 +112,9 @@ img {
   -o-border-radius: 50%;
   border-radius: 50%;
   padding: 0px;
+}
+
+/* line 85, ../../../sass/styles/screen.scss */
+.large-p {
+  margin-left: 57.21866%;
 }

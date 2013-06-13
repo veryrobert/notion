@@ -19,10 +19,6 @@ position: relative;
 }
 
 
-.fifteen { 
-@include gs-span (d, all);
-
-}
 
 .left-aside { 
 @include gs-span (d, 1, 4, (1,15)); 
@@ -41,19 +37,22 @@ z-index: 100;
 
 }
 
-.large-p {  margin-left:57.21866%;  }
 
 
 .content, .wrap {
 
-@include gs-span(d, 4, 15, (1,15));
+@include gs-span(d, 4, 15, (1,15)); 
+@include gs-media(t, max) { @include gs-span(t, 1, 8); } 
+
 
 }
 
 
+
+
 .twelve  {
 
-@include gs-span(d, 4, 15, (4,15));
+  @include gs-span(d, 4, 15, (4,15));
 @include gs-float(d, left, (4,15));
    &:last-of-type {
          margin-right: 0;
@@ -61,66 +60,53 @@ z-index: 100;
 
 }
 
-
 .eleven {
-
 @include gs-span(d, 4, 14, (4,15));
 @include gs-float(d, left, (4,15));
    &:last-of-type {
          margin-right: 0;
       }
-
-}
+    }
 
 
 .ten {
-
 @include gs-span(d, 4, 13, (4,15));
 @include gs-float(d, left, (4,15));
    &:last-of-type {
          margin-right: 0;
       }
-
 }
 
 .nine {
-
 @include gs-span(d, 4, 12, (4,15));
 @include gs-float(d, left, (4,15));
    &:last-of-type {
          margin-right: 0;
       }
-
 }
 
 .eight {
-
 @include gs-span(s, 4, 11, (4,15));
 @include gs-float(s, left, (4,15));
    &:last-of-type {
          margin-right: 0;
       }
-
 }
 
 .seven {
-
 @include gs-span(s, 4, 10, (4,15));
 @include gs-float(s, left, (4,15));
    &:last-of-type {
          margin-right: 0;
       }
-
 }
 
 .six {
-
 @include gs-span(s, 4, 9, (4,15));
 @include gs-float(s, left, (4,15));
   &:last-of-type {
          margin-right: 0;
       }
-
 }
 
 .five {
@@ -132,21 +118,6 @@ z-index: 100;
       }
 }
 
-// .five-in-ten {
-// @include gs-span(s, 6, 10, (6,15));
-// @include gs-float(s, left, (6,15));
-// margin-left:3%;  margin-right: 0;
-//       }
-
-// .five-in-ten-right {
-
-// @include gs-span(s, 6, 10, (6,15));
-// @include gs-float(s, right, (6,15));
-// margin-left:0%;  margin-right: 0;
-      
-//       }
-
-
 
 
 .four {
@@ -154,18 +125,16 @@ z-index: 100;
 @include gs-span(s, 4, 7, (4,15));
 @include gs-float(s, left, (4,15));
 
+&:nth-child(3n+3) { margin-right: 0px;
+
+}
+
    &:last-of-type {
          margin-right: 0;
       }
 
-
 }
 
-.four-in-ten {
-@include gs-span(s, 7, 10, (6,15));
-@include gs-float(s, left, (6,15));
- 
-}
 
 .three {
 
@@ -232,4 +201,4 @@ clear: left;
 
 
 
-
+.nine, .eight, .seven, .six, .four, .five, .three, .two, p, h1, h2, h3, h4, .content, article, li.two, .studio h3 { @include gs-media(m, max) { @include gs-span(m, 1); float: left; clear: both;} }
