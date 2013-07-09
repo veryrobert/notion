@@ -39,15 +39,12 @@ z-index: 100;
 
 
 
-.content, .wrap {
-
+.content {
 @include gs-span(d, 4, 15, (1,15)); 
 @include gs-media(t, max) { @include gs-span(t, 1, 8); } 
 
 
 }
-
-
 
 
 .twelve  {
@@ -200,5 +197,24 @@ clear: left;
 }
 
 
+// Mobile Media – below 767px reset to stack all elements
 
-.nine, .eight, .seven, .six, .four, .five, .three, .two, p, h1, h2, h3, h4, .content, article, li.two, .studio h3 { @include gs-media(m, max) { @include gs-span(m, 1); float: left; clear: both;} }
+
+
+@include gs-media(m, max) {
+
+.content, aside, article, .left-aside, .twelve, p, .nine, .eight, .seven, .six, .four, .five, .three, .two   {
+
+@include gs-span(m, 1); float: left; clear: both;
+
+}
+
+}
+
+
+
+
+
+
+
+

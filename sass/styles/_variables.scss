@@ -22,7 +22,6 @@
 		$blue: rgb(33,128,171);
 		$light-blue: rgb(126,180,227);
 
-
 	/* Font */
 
 		$font:"ProximaNova-Regular", "Helvetica-neue", Helvetica, Arial, sans-serif;
@@ -34,10 +33,13 @@
 		$para: 16px/24;
 		$large-para:18px/30px;
 
+
 	/* Fonts-weight */
 
 		$black: "ProximaNova-Black";
+		$exbold: "ProximaNova-Extrabld";
 		$bold: "ProximaNova-Bold";
+
 		$semi: "ProximaNova-Semibold";
 		$regular: "ProximaNova-Regular";
 		$light: "ProximaNova-Light";
@@ -52,5 +54,15 @@
 /* Padding/Margin/Global Spacing */
 
 		
+		$height-hf:100px;
+		$gutter:2.68%;
+		$half-gutter:1.34%;
+
+
+
+// Baseline / 
+
+
+
 
 

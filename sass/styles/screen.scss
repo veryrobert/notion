@@ -1,15 +1,37 @@
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Style Imports - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+
+// Main Grid import
+@import "mix";
+
+
+// Compass Imports – http://compass-style.org/
+@import "compass/css3";
 @import "compass/css3/border-radius";
 @import"compass/typography";
+@import "compass/css3/transition";
+
+
+// Personal Imports
 @import"variables";
 @import"box";
 
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Mixin Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 @mixin body-width { margin:$center; width: $body-width; display: block; }
 @mixin full-width { float:left; width: $span-full; display: block;}
 @mixin pad-top-bottom { padding: 10px 0; }
-@mixin list-inline { display: inline; list-style: none; }
+@mixin list-inline { display: inline; list-style: none; width: auto; }
 @mixin gutter-push-right { padding-right: 2.68%; }
+@mixin button { height: 38px; width: 38px; text-indent: -9999px; display: inline-block; }
 
-// Simple reset
+.push-gutter { padding-left: 2.68%; }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Simple Reset - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
 html,body,h1,div,div, a, li, ul  {
 margin: 0;
 padding: 0;
@@ -25,63 +47,231 @@ font-style: normal;
 list-style-type: none;
 }
 
-
-// Menu & footer styling 
-
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Notion Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
 
-nav, footer 	{ height: 100px; 
 
-li 				{ @include list-inline; padding:0 30px 0 0; 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Typography - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
-li.float-right 	{ @include list-inline; padding-left:0 0 0 30px;
+
+
+// Headers 
+
+@import"type";
+
+// Body Copy
+
+// List styles
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Structure - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+// Page structure:  section.wrapper > header#mainheader > div.nav ^ span.logo nav ^^ section.panel > div.row > aside.left-aside ^ div.content ^ article ^^ footer 
+
+
+// Global
+
+a {  @include single-transition(0.1s, ease-out, 0);
+
+&:hover {  @include single-transition(0.1s, ease-in, 0); }
+
+}
+
+// Header
+
+header 	{ @include body-width; position: fixed; z-index: 200; top:0px;  background-color:rgba(255,255,255,0.9); height: 126px;
+
+&.panel { padding-bottom: 0px;}
+
+nav {  margin-top: 54px;  text-transform: uppercase; 
+
+ul {margin-top: 6px;}
+
+li 		{ @include list-inline; padding:0 $gutter 0 0;
+
+&.float-right { padding-right: 0px; padding-left:35px;}
+
+
+}
+}
+
+a { color: $orange; margin: 0px; padding: 10px 15px; margin: -10px -15px;  font-family: $semi;
+
+&:hover { color: $navy; background-color:rgba(240, 240, 240, 0.0); padding: 10px 15px; margin: -10px -15px; } 
+
+&.logo { padding: 0px; margin: 0px; display: inline-block; text-indent: -9999px; width: 90px; height: 25px; background: url(/build/img/logo.svg) no-repeat; background-size: 90px 25px;}
+
+}
+
+
+}
+
+// Body
+
+.wrapper { margin-top: 150px; }
+.row 	 { @include body-width; }
+.panel 	 { @include full-width; padding-bottom: 56px;
+
+}
+
+
+article { li { padding:$half-gutter 0;} }
+
+
+// Aside
+
+aside { margin-top: 98px; position: fixed; z-index: 100;
+
+&.left-aside { }
+
+}
+
+
+
+
+// Footer 
+
+footer { padding-top: 112px; padding-bottom:12px;
+
+&.panel {padding-bottom: 12px;}
+ul	{ @include list-inline; 
+li 	{ @include list-inline; padding-right: 30px; font-size: 14px;   
+
+a {font-family: $semi; text-transform: uppercase;}
+
+&:last-child { padding-right:0px; }
+
+&.copyright { font-size: 12px; color: $orange;}
 
 } } }
 
 
-// Main styling
 
-.wrapper {margin-top: 150px;}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page Elements - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
-p { .four { clear: both; } }
-
-header { position: fixed; width: 100%; z-index: 200; top:0px;
-
-padding: 40px 0px 0px 0px;
-
-}
-// header { @include body-width; }
-
-div.nav {@include body-width;}
+// Images
 
 img { width: $span-full; }
 
-.row { @include body-width; }
 
-.panel { @include full-width }
-
-
-//  Dark Blue background styling for font
-
-.case-study, .studio { color:$white; background: $navy;
-
-.container { display: block; 
-float: left; }
-
-p, h2, h3, h4, a, li { color:$white; }
-
-}
-
-.profiles img   { @include border-radius(50%); padding:0px; }
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page Specific Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
 
-.post {
+// Home Page
 
+// Project Page
+
+.case-study {
+
+&.panel { padding: 56px 0 112px 0;}
 
 
 }
 
+// Studio Page
 
-.large-p {  margin-left:57.21866%;  }
+.case-study, .studio { color:$white; background: $navy; padding-top: 56px;
+
+.orange {color: $orange;}
+
+.container 	{ 
+	display: block; float: left; 
+}
+
+
+h3 { border-bottom: solid 1px $orange; display: inline-block;
+
+&.no-border { line-height: 20px; margin-right: 50px;}
+
+}
+
+h2, h4, p, a, li 	
+{ color:$white; }
+
+
+ li { padding-top: 0px; }
+
+h3, p {padding-top: 0px; margin-top: 0px;}
+
+}
+
+img.profile   { @include border-radius(50%); padding:0px; }
+
+ul {
+
+
+&.clients  {  background: #353b42; padding-top: 0px; margin-top: -56px; padding: 24px; height: 102px;  @include border-radius(2px);
+
+li { display: inline;}
+
+}
+
+&.social 
+
+{ margin-top: 30px;
+li { display: inline;margin-right: 6px;}
+}
+
+&.twelve { padding: 28px 0;}
+&.staff { padding-top: 0px;}
+
+
+}
+
+p.intro { margin-left: -25.5%;}
+
+// Work Page
+
+// Journal Page
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Button Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+
+a {
+
+&.social { @include button; background: #353b42;  @include border-radius(2px, 2px); }
+
+&.circle-button { border: 2px solid $orange; @include button; @include border-radius(48px, 48px); margin-top: 98px; 
+background: url(/build/img/arrow.svg) no-repeat; @include single-transition(0, ease-out, 0);
+
+&.circle-button:hover { background: url(/build/img/arrow_hover.svg); background-color:rgba(255,128,101,0.8);}
+
+
+}
+
+}
+
+button {  @include button; width: 122px; padding: 0px; background: #353b42;  border: none;  @include border-radius(2px, 2px); }
+
+input[type="submit"] {  height: 37px; width: 37px; background: $orange; border: none; margin-left: -4px;  @include border-right-radius(2px); font-family: $bold; color: $navy; padding-bottom: 0px;  }
+input[type="text"] {  height:17px; padding: 10px; background:#353b42; border: none; width:70%; color:$orange;  @include border-left-radius(2px); margin-top: 6px;
+
+&:focus { border:none;}
+
+ }
+
+textarea:focus { border: none;}
+
+*:focus {
+    outline: 0;
+}
+
+
+
+
+.map {
+background:$orange;
+display:block;
+height:500px;
+left:0;
+margin-bottom:56px;
+padding-bottom:40px;
+position:relative;
+top:0;
+width:100%;
+}
 
 
