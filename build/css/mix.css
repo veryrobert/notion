@@ -42,7 +42,7 @@
   }
 }
 
-/* line 50, ../../sass/mix.scss */
+/* line 49, ../../sass/mix.scss */
 .twelve {
   display: block;
   float: left;
@@ -54,12 +54,12 @@
   margin-left: 0;
   margin-right: 1.96078%;
 }
-/* line 54, ../../sass/mix.scss */
+/* line 53, ../../sass/mix.scss */
 .twelve:last-of-type {
   margin-right: 0;
 }
 
-/* line 60, ../../sass/mix.scss */
+/* line 59, ../../sass/mix.scss */
 .eleven {
   display: block;
   float: left;
@@ -71,12 +71,12 @@
   margin-left: 0;
   margin-right: 1.96078%;
 }
-/* line 63, ../../sass/mix.scss */
+/* line 62, ../../sass/mix.scss */
 .eleven:last-of-type {
   margin-right: 0;
 }
 
-/* line 69, ../../sass/mix.scss */
+/* line 68, ../../sass/mix.scss */
 .ten {
   display: block;
   float: left;
@@ -88,12 +88,12 @@
   margin-left: 0;
   margin-right: 1.96078%;
 }
-/* line 72, ../../sass/mix.scss */
+/* line 71, ../../sass/mix.scss */
 .ten:last-of-type {
   margin-right: 0;
 }
 
-/* line 77, ../../sass/mix.scss */
+/* line 76, ../../sass/mix.scss */
 .nine {
   display: block;
   float: left;
@@ -105,12 +105,12 @@
   margin-left: 0;
   margin-right: 1.96078%;
 }
-/* line 80, ../../sass/mix.scss */
+/* line 79, ../../sass/mix.scss */
 .nine:last-of-type {
   margin-right: 0;
 }
 
-/* line 85, ../../sass/mix.scss */
+/* line 84, ../../sass/mix.scss */
 .eight {
   display: block;
   float: left;
@@ -122,12 +122,12 @@
   margin-left: 0;
   margin-right: 2.67523%;
 }
-/* line 88, ../../sass/mix.scss */
+/* line 87, ../../sass/mix.scss */
 .eight:last-of-type {
   margin-right: 0;
 }
 
-/* line 93, ../../sass/mix.scss */
+/* line 92, ../../sass/mix.scss */
 .seven {
   display: block;
   float: left;
@@ -139,12 +139,12 @@
   margin-left: 0;
   margin-right: 2.67523%;
 }
-/* line 96, ../../sass/mix.scss */
+/* line 95, ../../sass/mix.scss */
 .seven:last-of-type {
   margin-right: 0;
 }
 
-/* line 101, ../../sass/mix.scss */
+/* line 100, ../../sass/mix.scss */
 .six {
   display: block;
   float: left;
@@ -233,7 +233,7 @@
   margin-right: 0;
 }
 
-/* line 156, ../../sass/mix.scss */
+/* line 159, ../../sass/mix.scss */
 .one {
   display: block;
   float: left;
@@ -245,12 +245,12 @@
   margin-left: 0;
   margin-right: 2.67523%;
 }
-/* line 160, ../../sass/mix.scss */
+/* line 163, ../../sass/mix.scss */
 .one:last-of-type {
   margin-right: 0;
 }
 
-/* line 167, ../../sass/mix.scss */
+/* line 170, ../../sass/mix.scss */
 .one-in-ten {
   display: block;
   float: left;
@@ -263,7 +263,7 @@
   margin-right: 3.22754%;
 }
 
-/* line 174, ../../sass/mix.scss */
+/* line 177, ../../sass/mix.scss */
 .float-right {
   clear: none;
   float: right;
@@ -272,7 +272,7 @@
   margin-left: 0;
 }
 
-/* line 179, ../../sass/mix.scss */
+/* line 182, ../../sass/mix.scss */
 .float-left {
   clear: none;
   float: left;
@@ -281,12 +281,12 @@
   margin-left: 0;
 }
 
-/* line 185, ../../sass/mix.scss */
+/* line 188, ../../sass/mix.scss */
 .no-margin {
   margin: 0px;
 }
 
-/* line 187, ../../sass/mix.scss */
+/* line 190, ../../sass/mix.scss */
 li.list-of-six {
   background: aqua;
   clear: none;
@@ -294,25 +294,146 @@ li.list-of-six {
   margin-left: 0;
   margin-right: 2.67523%;
 }
-/* line 190, ../../sass/mix.scss */
+/* line 193, ../../sass/mix.scss */
 li.list-of-six:nth-child(2n+2) {
   margin-right: 0px;
 }
 
-/* line 195, ../../sass/mix.scss */
+/* line 198, ../../sass/mix.scss */
 .l-clear {
   clear: left;
 }
 
+/* line 213, ../../sass/mix.scss */
+.journal-aside {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 45.83333%;
+}
+
+/* line 221, ../../sass/mix.scss */
+.intro {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 32.29167%;
+  margin-left: 0;
+  clear: left;
+}
+
+/* line 231, ../../sass/mix.scss */
+.journal-p {
+  display: block;
+  float: left;
+  margin-left: 40.625%;
+  margin-right: -100%;
+  width: 52.60417%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.5625%;
+  margin-left: 40.625%;
+  clear: left;
+}
+
+/* line 239, ../../sass/mix.scss */
+.twelve-offset {
+  display: block;
+  float: left;
+  margin-left: 20.3125%;
+  margin-right: -100%;
+  width: 79.6875%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.5625%;
+  margin-left: 20.3125%;
+}
+
+/* line 245, ../../sass/mix.scss */
+.five-offset {
+  display: block;
+  float: left;
+  margin-left: 20.3125%;
+  margin-right: -100%;
+  width: 39.0625%;
+}
+
+/* line 250, ../../sass/mix.scss */
+.two-up {
+  display: block;
+  float: left;
+  margin-left: 33.85417%;
+  margin-right: -100%;
+  width: 66.14583%;
+  display: block;
+  float: left;
+  margin-left: 33.95833%;
+  margin-right: -100%;
+  width: 66.04167%;
+}
+
+/* line 262, ../../sass/mix.scss */
+.meta {
+  display: block;
+  float: left;
+  margin-left: 20.3125%;
+  margin-right: -100%;
+  width: 72.91667%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.5625%;
+  margin-left: 20.3125%;
+}
 @media only screen and (max-width: 767px) {
-  /* line 206, ../../sass/mix.scss */
-  .content, aside, article, .left-aside, .twelve, p, .nine, .eight, .seven, .six, .four, .five, .three, .two {
+  /* line 270, ../../sass/mix.scss */
+  .meta ul {
+    clear: both;
+  }
+}
+/* line 274, ../../sass/mix.scss */
+.meta ul.share {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 25.14506%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.92554%;
+}
+/* line 280, ../../sass/mix.scss */
+.meta ul.tags {
+  display: block;
+  float: left;
+  margin-left: 28.0706%;
+  margin-right: -100%;
+  width: 71.9294%;
+  clear: none;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.92554%;
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 939px) {
+  /* line 294, ../../sass/mix.scss */
+  .content, aside, article, .left-aside, .twelve, p, .nine, .eight, .seven, .four, .five, .three, .two,
+  .journal-aside, .intro, .journal-p, .twelve-offset, .five-offset, .two-up, .journal-aside, .meta, footer ul {
     display: block;
     float: left;
     margin-left: 0%;
     margin-right: -100%;
-    width: 99.84375%;
+    width: 10.21322%;
     float: left;
     clear: both;
+    margin-left: 0px;
+    width: 100%;
+    position: relative;
   }
 }

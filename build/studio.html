@@ -20,151 +20,211 @@
 <!--[if IE 9]><link rel="stylesheet" href="./css/gridset/gridset-ie-9.css" /><![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="./css/gridset/gridset-ie-lte8.css" /><![endif]-->
 
- <link href="./css/mix.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
  <link href="./css/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
  <link rel="stylesheet" type="text/css" href="./css/styles/jquery.bxslider.css">
-  <link rel="stylesheet" type="text/css" href="./css/styles/baseline.css">
+ 
 
 
 
 <link href="http://fnt.webink.com/wfs/webink.css/?project=7C5C8AF9-1A36-4CDC-B07A-ED72417698D9&fonts=382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold,38D80777-BBB8-AAF3-8C21-AAA9AD92B6E6:f=ProximaNova-BlackIt,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,FA4379E2-2038-8F3F-1CCD-9D7F6C1BE854:f=ProximaNova-ExtrabldIt,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,7ADDF267-02FA-4E7A-F098-EF6D9CFEF9AE:f=ProximaNova-Black,D8F30418-0E92-EBB4-6408-D220574EF53E:f=ProximaNova-Extrabld,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt" rel="stylesheet" type="text/css"/>
 
 
+
 </head>
 
 
+ <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
 <!-- Header & Menu Section -->
 
-<body>
+<body id="heyo" onload="initialize()">
 
 
 
 
 
-          <!--[if lt IE 7]>
-              <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-          <![endif]-->
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
-      <!-- Header & Menu Section -->
+<!-- Header & Menu Section -->
 
-      <header id="mainheader" class="panel">
-          
- <div class="row">
-                       <nav class="size-1">
-                           
-                           <ul>
-                           <li class="logo"><a class="logo" href="index.html">Notion</a><li>  
-                               <li class="float-right" ><a href="journal.html">Journal</a></li>
-                               <li class="float-right" ><a href="studio.html">Studio</a></li>
-                               <li class="float-right" ><a href="work.html">Work</a></li>
-         
-                           </ul> 
-         
-                       </nav></div>
+<header class="panel">
+  <div class="row">
+      <div class="logo"><a class="logo" href="index.html"><h1>Notion</h1></a></div>  
+        <button class="t-hide d-hide s-hide l-hide menu-icon menu-trigger"></button>  
+      <nav> 
+        <span class="mobile-menu">
+          <ul> 
+            <li><a class="menu-item" href="work.html" id="work">Work</a></li>  
+             <li><a class="menu-item" href="studio.html" id="studio">Studio</a></li>
+          <li><a class="menu-item" href="journal.html" id="journal">Journal</a></li>
+        </ul> 
+      </span>
+    </nav>
+  </div>
+</header>
 
-        </header>
-<section class="wrapper s-clear d-clear">
 
-<section class=" panel studio">
+<div class="wrapper">
 
+<section class="panel studio">
 	<div class="row">
-		<div class="content ">
-
-
+		<div class="content">
 			<article class="twelve">
 				<ul>
-					<li class="seven"><img src="http://placehold.it/640x400/ff8067/ffffff"></li>
-					<li class="five float-right"><img src="http://placehold.it/400x550/ff8067/ffffff"></li>
-					<li><p class="size-4 intro eight orange">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p></li>
+					<li class="seven"><img src=
+					"http://placehold.it/640x400/ff8067/ffffff"></li>
+
+					<li class="five float-right"><img src=
+					"http://placehold.it/400x550/ff8067/ffffff"></li>
+
+					<li>
+						<p class="size-4 studio-intro seven orange">Sed ut
+						perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium doloremque laudantium, totam rem aperiam,
+						eaque ipsa quae ab illo inventore veritatis et quasi
+						architecto beatae vitae dicta sunt explicabo.</p>
+					</li>
 				</ul>
 
 				<ul class="twelve">
 					<li class="two">
 						<h3>Profile</h3>
 					</li>
-					<li class="five">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro, perferendis at doloremque amet pariatur saepe nam magnam exercitationem soluta vel blanditiis est rerum nulla modi quasi suscipit accusamus qui!</p>
-					</li>	
 
 					<li class="five">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro, perferendis at doloremque amet pariatur saepe nam magnam exercitationem soluta vel blanditiis est rerum nulla modi quasi suscipit accusamus qui!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Optio, porro, perferendis at doloremque amet
+						pariatur saepe nam magnam exercitationem soluta vel
+						blanditiis est rerum nulla modi quasi suscipit
+						accusamus qui!</p>
 					</li>
 
+					<li class="five">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Optio, porro, perferendis at doloremque amet
+						pariatur saepe nam magnam exercitationem soluta vel
+						blanditiis est rerum nulla modi quasi suscipit
+						accusamus qui!</p>
+					</li>
 				</ul>
-
 
 				<ul class="twelve">
-
 					<li class="two">
-						<h3 class="no-border jobs">Vancies &amp; <span class="add-border">Placements</span></h3>
+						<h3 class="no-border jobs">Vancies &amp; <span class=
+						"add-border">Placements</span></h3>
 					</li>
-					<li class="five">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro, perferendis at doloremque amet pariatur saepe nam magnam exercitationem soluta vel blanditiis est rerum nulla modi quasi suscipit accusamus qui!</p>
-					</li>	
 
+					<li class="five">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Optio, porro, perferendis at doloremque amet
+						pariatur saepe nam magnam exercitationem soluta vel
+						blanditiis est rerum nulla modi quasi suscipit
+						accusamus qui!</p>
+					</li>
 				</ul>
 
-				<ul class="twelve directors">
+				<ul class="twelve directors team">
 					<li class="two">
 						<h3>Our Team</h3>
 					</li>
 
-					<li class="one"><img class="profile" src="img/test.svg"></span></li>
+					<li class="one profile"><img class="profile" src=
+					"img/test.svg"></li>
+
 					<li class="two">
 						<h4>Name of Person</h4>
-						<p class="small">Position</p>
-						<p><a href="">email@notion.ie</a></p>
+
+						<p class="size-2">Position</p>
+
+						<p class="size-2"><a href="">email@notion.ie</a></p>
 					</li>
 
-					<li class="one"><img class="profile" src="img/test.svg"></span></li>
+					<li class="one"><img class="profile" src=
+					"img/test.svg"></li>
+
 					<li class="two">
 						<h4>Name of Person</h4>
-						<p class="small">Position</p>
-						<p><a href="">email@notion.ie</a></p>
-					</li>
 
+						<p class="size-2">Position</p>
+
+						<p class="size-2"><a href="">email@notion.ie</a></p>
+					</li>
 				</ul>
 
-				<ul class="twelve staff">
-					<li class="two  ">
-					</li>
+				<ul class="twelve staff team">
+					<li class="two"></li>
 
-					<li class="one"><img class="profile" src="img/test.svg"></span></li>
+					<li class="one"><img class="profile" src=
+					"img/test.svg"></li>
+
 					<li class="two">
 						<h4>Name of Person</h4>
-						<p class="small">Position</p>
-						<p><a href="">email@notion.ie</a></p>
+
+						<p class="size-2">Position</p>
+
+						<p class="size-2"><a href="">email@notion.ie</a></p>
 					</li>
 
-					<li class="one"><img class="profile" src="img/test.svg"></span></li>
+					<li class="one"><img class="profile" src=
+					"img/test.svg"></li>
+
 					<li class="two">
 						<h4>Name of Person</h4>
-						<p class="small">Position</p>
-						<p><a href="">email@notion.ie</a></p>
+
+						<p class="size-2">Position</p>
+
+						<p class="size-2"><a href="">email@notion.ie</a></p>
 					</li>
 
-					<li class="one"><img class="profile" src="img/test.svg"></span></li>
+					<li class="one"><img class="profile" src=
+					"img/test.svg"></li>
+
 					<li class="two">
 						<h4>Name of Person</h4>
-						<p class="small">Position</p>
-						<p><a href="">email@notion.ie</a></p>
-					</li>
 
+						<p class="size-2">Position</p>
+
+						<p class="size-2"><a href="">email@notion.ie</a></p>
+					</li>
 				</ul>
-
 
 				<ul class="twelve">
 					<li class="two">
 						<h3>Contact Us</h3>
 					</li>
+
 					<li class="three">
 						<ul>
-							<li><h4>Notion</h4></li>
+							<li>
+								<h4>Notion</h4>
+							</li>
+
 							<li>29 Holles Place</li>
+
 							<li>Dublin 2</li>
-							<li>Ireland</li></br>
-							<li><a href="#">hello@notion.ie</a></li>
-							<li>+353 (0) 1 906 0179</li></br>
+
+							<li>Ireland</li>
+
+							<li>
+								<a href="#">hello@notion.ie</a>
+							</li>
+
+							<li>+353 (0) 1 906 0179</li>
+
 							<li><button class="trigger">View Map</button></li>
 						</ul>
 					</li>
@@ -173,95 +233,124 @@
 						<h4>Keep in touch</h4>
 
 						<form action="demo_form.asp">
-
-							<input type="text" value="Your Email" >
+							<input placeholder="Your Email" type="text">
 							<input type="submit" value="GO">
-
 						</form>
 					</li>
 
 					<li class="three">
 						<ul class="social">
-							<li><a href="#" class="social" >Twitter</a></li>
-							<li><a href="#" class="social" >Facebook</a></li>
-							<li><a href="#" class="social" >Tumblr</a></li>
+							<li>
+								<a class="social" href="#">Twitter</a>
+							</li>
+
+							<li>
+								<a class="social" href="#">Facebook</a>
+							</li>
+
+							<li>
+								<a class="social" href="#">Tumblr</a>
+							</li>
 						</ul>
 					</li>
-
-
 				</ul>
-
 			</article>
-
 		</div>
-	</div>
+	</div><!-- End of studio top section before map -->
 
-	<!-- End of studio top section before map -->
+	<div class="panel map">
+		<div id="map-canvas">
 
-	<div class="panel map"  >
 		<div class="row">
-
 			<!-- This is the map -->
-
 		</div>
-
 	</div>
+</section>
 
-
-<section class="panel">
+<section class="panel studio">
 	<div class="row">
-		<div class="content ">
+		<div class="content">
 			<article class="twelve">
-
 				<ul>
-
 					<li class="two">
 						<h3>Our Clients</h3>
 					</li>
-					<li class="ten  float-right">
+
+					<li class="ten hide-m float-right">
 						<ul class="clients">
-							<li>Client Name</li>
-							<li>Client Name</li>
-							<li>Client Name</li>
-							<li>Client Name</li>
-							<li>Client Name</li>
+							<li><img alt="" src="img/clients.svg"></li>
 						</ul>
 					</li>
-
 				</ul>
 
 				<ul class="twelve">
-					<li class="two "></li>
-					<li class="five"><img src="http://placehold.it/640x400/ff8067/ffffff"></li>
-					<li class="five"><img src="http://placehold.it/640x400/ff8067/ffffff"></li>
+					<li class="two"></li>
+
+					<li class="five"><img src=
+					"http://placehold.it/640x400/ff8067/ffffff"></li>
+
+					<li class="five"><img src=
+					"http://placehold.it/640x400/ff8067/ffffff"></li>
+				</ul>
+
+				<ul class="twelve float-right no-pad-top">
+					<li class="two"></li>
+
+					<li class="one"><img src="img/test.svg"></li>
+
+					<li class="four">
+						<p class="size-1 italic">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Corrupti similique soluta
+						ex non facilis autem alias obcaecati minima architecto
+						deserunt. A, sit deserunt accusantium voluptatum ipsa
+						nesciunt dolore repellendus eligendi.</p>
+
+						<p class="italic size-1">— Robert Farrelly</p>
+					</li>
+
+					<li class="one push-gutter"><img src="img/test.svg"></li>
+
+					<li class="four">
+						<p class="size-1 italic">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Corrupti similique soluta
+						ex non facilis autem alias obcaecati minima architecto
+						deserunt. A, sit deserunt accusantium voluptatum ipsa
+						nesciunt dolore repellendus eligendi.</p>
+
+						<p class="italic size-1">— Robert Farrelly</p>
+					</li>
 				</ul>
 
 				<ul class="twelve float-right">
 					<li class="two"></li>
+
 					<li class="one"><img src="img/test.svg"></li>
-					<li class="four">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti similique soluta ex non facilis autem alias obcaecati minima architecto deserunt. A, sit deserunt accusantium voluptatum ipsa nesciunt dolore repellendus eligendi.</li>
+
+					<li class="four">
+						<p class="size-1 italic">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Corrupti similique soluta
+						ex non facilis autem alias obcaecati minima architecto
+						deserunt. A, sit deserunt accusantium voluptatum ipsa
+						nesciunt dolore repellendus eligendi.</p>
+
+						<p class="italic size-1">— Robert Farrelly</p>
+					</li>
+
 					<li class="one push-gutter"><img src="img/test.svg"></li>
-					<li class="four">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti similique soluta ex non facilis autem alias obcaecati minima architecto deserunt. A, sit deserunt accusantium voluptatum ipsa nesciunt dolore repellendus eligendi.</li>
+
+					<li class="four">
+						<p class="size-1 italic">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Corrupti similique soluta
+						ex non facilis autem alias obcaecati minima architecto
+						deserunt. A, sit deserunt accusantium voluptatum ipsa
+						nesciunt dolore repellendus eligendi.</p>
+
+						<p class="italic size-1">— Robert Farrelly</p>
+					</li>
 				</ul>
-
-				<ul class="twelve float-right">
-					<li class="two "></li>
-					<li class="one"><img src="img/test.svg"></li>
-					<li class="four">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti similique soluta ex non facilis autem alias obcaecati minima architecto deserunt. A, sit deserunt accusantium voluptatum ipsa nesciunt dolore repellendus eligendi.</li>
-					<li class="one push-gutter"><img src="img/test.svg"></li>
-					<li class="four">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti similique soluta ex non facilis autem alias obcaecati minima architecto deserunt. A, sit deserunt accusantium voluptatum ipsa nesciunt dolore repellendus eligendi.</li>
-				</ul>
-
-
 			</article>
 		</div>
 	</div>
-
-</section>
-
-</div>
-</div>
-
 </section>
 
 
@@ -272,17 +361,17 @@
 
 <div class="content">
         <ul>
-          <li><a href="#">hello@notion.ie</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Tumblr</a></li>
-          <li class="float-right copyright">Copyright &copy; Notion 2013</li>
+          <li class="mail"><a href="#">hello@notion.ie</a></li>
+          <li class="small-twitter"><a href="#">Twitter</a></li>
+          <li class="small-tumblr"><a href="#">Tumblr</a></li>
+          <li class="float-right hide-m copyright">Copyright &copy; Notion 2013</li>
         </ul>
 </div>
 
 </div>
 
 </footer>
-</section> <!-- section wrapper -->
+</div> <!-- section wrapper -->
 
 </body>
 
@@ -292,9 +381,10 @@
   <!-- jQuery --> 
 <script src="./js/gridset-overlay.js"></script> 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-<script src="./js/plugins-ck.js"></script> 
+<script src="./js/plugins.js"></script> 
 <script type="text/javascript" src="./js/plugs.js"></script>
 <script type="text/javascript" src="./js/hashgrid.js"></script>
 

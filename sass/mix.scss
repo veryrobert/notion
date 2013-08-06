@@ -43,7 +43,6 @@ z-index: 100;
 @include gs-span(d, 4, 15, (1,15)); 
 @include gs-media(t, max) { @include gs-span(t, 1, 8); } 
 
-
 }
 
 
@@ -101,6 +100,7 @@ z-index: 100;
 .six {
 @include gs-span(s, 4, 9, (4,15));
 @include gs-float(s, left, (4,15));
+// width: gs-adjust(d, gs-gutter(d), (4, 9), true);
   &:last-of-type {
          margin-right: 0;
       }
@@ -150,6 +150,9 @@ z-index: 100;
    &:last-of-type {
          margin-right: 0;
       }
+
+
+
 
 }
 
@@ -201,16 +204,106 @@ clear: left;
 
 
 
-@include gs-media(m, max) {
 
-.content, aside, article, .left-aside, .twelve, p, .nine, .eight, .seven, .six, .four, .five, .three, .two   {
 
-@include gs-span(m, 1); float: left; clear: both;
+
+
+// Journal layout styling 
+
+.journal-aside {
+
+@include gs-span(d, 1, 7, (1,15));
+
+} 
+
+
+
+.intro {
+@include gs-span(d, 1, 5, (1,15));
+
+  margin-left: gs-marginleft(d, 1, false, true);  
+  clear: left;
+}
+
+
+
+
+.journal-p {
+
+@include gs-span(d, 7, 14, (1,15));
+@include gs-float(d, left, (1,15));
+  margin-left: gs-marginleft(d, 7, false, true);  
+  clear: left;
+}
+
+.twelve-offset {
+@include gs-span(d, 4, 15, (1,15));
+@include gs-float(d, left, (1,15));
+  margin-left: gs-marginleft(d, 4, false, true);  
+}
+
+.five-offset {
+@include gs-span(d, 4, 9, (1,15));
+  // margin-left: gs-marginleft(d, 4, false, true);  
+}
+
+.two-up {
+@include gs-span(d, 6, 15, (1,15));
+@include gs-span(l, 6, 15, (1,15));
+  // margin-left: gs-marginleft(d, 4, false, true);  
+}
+
+// .five-offset-right {
+// @include gs-span(d, 1, 5, (1,15));
+//   margin-left: gs-marginleft(d, 10, false, true);  
+// }
+
+
+.meta { 
+
+
+@include gs-span(d, 4, 14, (1,15));
+@include gs-float(d, left, (1,15));
+  margin-left: gs-marginleft(d, 4, false, true);  
+
+
+ul { 
+
+  @include gs-media(m, max) { clear: both; }
+  
+&.share { @include gs-span(s, 4, 6, (4,14));
+          @include gs-float(s, left, (4,14)); 
+
+
+        }
+
+&.tags {  @include gs-span(s, 7, 14, (4,14));
+          @include gs-float(s, left, (4,14)); 
+margin-right: 0px;
+        }
+
+
+  }
+
+}
+
+
+@include gs-media(t, max) {
+
+.content, aside, article, .left-aside, .twelve, p, .nine, .eight, .seven, .four, .five, .three, .two, 
+.journal-aside, .intro, .journal-p, .twelve-offset, .five-offset, .two-up, .journal-aside, .meta, footer ul {
+
+    @include gs-span(t, 1); 
+    float: left; 
+    clear: both; 
+    margin-left: 0px; 
+    width: 100%; 
+    position: relative;
+
 
 }
 
 }
-
 
 
 
