@@ -1,0 +1,88 @@
+
+
+@include gs-media(s, min) {
+
+.twelve {
+@include gs-span(s, 4, 15, (4,15));
+@include gs-float(s, left, (4,15));
+}
+
+.ten {
+@include gs-span(s, 6, 15, (4,15));
+@include gs-float(s, left, (4,15));
+}
+
+.eight {
+@include gs-span(s, 4, 10, (4,15));
+@include gs-float(s, left, (4,15));
+@include last-of-type;
+}
+
+.seven {
+@include gs-span(s, 4, 10, (4,15));
+@include gs-float(s, left, (4,15));
+@include last-of-type;
+}
+
+.six {
+@include gs-span(s, 4, 9, (4,15));
+@include gs-float(s, left, (4,15));
+@include last-of-type;
+}
+
+.five {
+@include gs-span(s, 4, 8, (4,15));
+@include gs-float(s, left, (4,15));
+@include last-of-type;
+}
+
+.four {
+@include gs-span(s, 4, 7, (4,15));
+@include gs-float(s, left, (4,15));
+	&:nth-child(3n+3) { margin-right: 0px;}
+@include last-of-type;
+}
+
+.three {
+@include gs-span(s, 4, 6, (4,15));
+@include gs-float(s, left, (4,15));
+@include last-of-type;
+}
+
+.two {
+@include gs-span(l, 4, 5, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+.one {
+@include gs-span(l, 4, 4, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+.meta {
+  @include gs-span(s, 4, 14, (1, 15));
+  @include gs-float(s, left, (1, 15));
+  margin-left: gs-marginleft(s, 4, false, true);
+  ul {
+    @include gs-media(s, max) {
+      clear: both;
+    }
+
+    &.share {
+      @include gs-span(s, 4, 6, (4, 14));
+      @include gs-float(s, left, (4, 14));
+    }
+    &.tags {
+      @include gs-span(s, 7, 14, (4, 14));
+      @include gs-float(s, left, (4, 14));
+      margin-right: 0px;
+    }
+  }
+}
+
+
+
+}
+

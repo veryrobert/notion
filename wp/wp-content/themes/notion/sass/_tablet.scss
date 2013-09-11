@@ -1,0 +1,112 @@
+
+
+@include gs-media(t, max) {
+
+.content {
+  @include gs-span(t, all, (1, 12));
+
+}
+
+.twelve {
+@include gs-span(t, all, (1,12));
+@include gs-float(t, left, (1,12));
+}
+
+.ten {
+@include gs-span(t, 1, 10, (1,12));
+@include gs-float(t, left, (1,12));
+}
+
+
+.seven {
+@include gs-span(t, 1, 7, (1,12));
+@include gs-float(t, left, (1,12));
+@include last-of-type;
+}
+
+.six {
+@include gs-span(t, 1, 6, (1,12));
+@include gs-float(t, left, (1,12));
+@include last-of-type;
+}
+
+.five {
+@include gs-span(t, 1, 5, (1,12));
+@include gs-float(t, left, (1,12));
+@include last-of-type;
+}
+
+.four {
+@include gs-span(t, 1, 4, (1,12));
+@include gs-float(t, left, (1,12));
+	&:nth-child(3n+3) { margin-right: 0px;}
+@include last-of-type;
+}
+
+.three {
+@include gs-span(t, 1, 3, (1,12));
+@include gs-float(t, left, (1,12));
+@include last-of-type;
+}
+
+.two {
+@include gs-span(t, 1, 2, (1,12));
+@include gs-float(t, left, (1,12));
+@include last-of-type;
+}
+
+.one {
+@include gs-span(t, 1, 1, (1,12));
+@include gs-float(t, left, (1,12));
+@include last-of-type;
+}
+
+aside {display: block;}
+
+.meta {
+  @include gs-span(t, 1, 12, (1, 12));
+  @include gs-float(t, left, (1, 12));
+
+  ul {
+    @include gs-media(t, max) {
+      clear: both;
+    }
+
+    &.share {
+      @include gs-span(t, 1, 3, (1, 12));
+      @include gs-float(t, left, (1, 12));
+    }
+    &.tags {
+      @include gs-span(t, 4, 12, (1, 12));
+      @include gs-float(t, left, (1, 12));
+      margin-right: 0px;
+    }
+  }
+}
+
+.journal-aside {
+  @include gs-span(t, 1, 5, (1, 12));
+}
+
+.intro {
+  @include gs-span(t, 1, 5, (1, 12));
+  margin-left: gs-marginleft(t, 1, false, true);
+  clear: left;
+}
+
+.journal-p {
+  @include gs-span(t, 6, 12, (1, 12));
+  @include gs-float(t, left, (1, 12));
+  margin-left: gs-marginleft(t, 6, false, true);
+
+color: aqua;
+
+  // clear: left;
+}
+
+
+
+}
+
+
+

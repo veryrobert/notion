@@ -1,0 +1,70 @@
+
+
+@include gs-media(l, min) {
+
+.twelve {
+@include gs-span(l, 4, 15, (4,15));
+@include gs-float(l, left, (4,15));
+}
+
+.ten {
+@include gs-span(l, 6, 15, (4,15));
+@include gs-float(l, left, (4,15));
+}
+
+.nine {
+@include gs-span(l, 7, 15, (4,15));
+@include gs-float(l, left, (4,15));
+}
+
+.eight {
+@include gs-span(l, 4, 10, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+.seven {
+@include gs-span(l, 4, 10, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+
+.six {
+@include gs-span(l, 4, 9, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+.five {
+@include gs-span(l, 4, 8, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+.four {
+@include gs-span(l, 4, 7, (4,15));
+@include gs-float(l, left, (4,15));
+	&:nth-child(3n+3) { margin-right: 0px;}
+@include last-of-type;
+}
+
+.three {
+@include gs-span(l, 4, 6, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+.two {
+@include gs-span(l, 4, 5, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+.one {
+@include gs-span(l, 4, 4, (4,15));
+@include gs-float(l, left, (4,15));
+@include last-of-type;
+}
+
+}

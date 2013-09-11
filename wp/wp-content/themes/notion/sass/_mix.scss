@@ -1,0 +1,124 @@
+// This imports grid mixins for gridset – mixins are created in mix.scsss
+@import "gridmix";
+
+$centre: 0 auto;
+
+@mixin row {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+  display: block;
+  position: relative;
+  margin-right: 0px;
+}
+
+@mixin block {
+  display: block;
+  position: relative;
+}
+
+@mixin last-of-type {
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+
+.content {
+  @include gs-span(d, 4, 15, (1, 15));
+}
+
+
+.journal-aside {
+  @include gs-span(s, 1, 7, (1, 15));
+}
+
+.intro {
+  @include gs-span(s, 1, 5, (1, 15));
+  margin-left: gs-marginleft(s, 1, false, true);
+  clear: left;
+}
+
+.journal-p {
+  @include gs-span(s, 7, 14, (1, 15));
+  @include gs-float(s, left, (1, 15));
+  margin-left: gs-marginleft(s, 7, false, true);
+  clear: left;
+}
+
+
+@import "_mobile";
+@import "_tablet";
+@import "_small_desktop";
+@import "_desktop";
+@import "_large_desktop";
+
+.left-seven {
+  @include gs-span(d, 1, 7, (1, 15));
+  position: relative;
+  z-index: 100;
+}
+
+
+
+.testimonial {
+  @include gs-span(d, 4, 8, (6, 15));
+  @include gs-float(d, left, (4, 15));
+  @include gs-span(s, 4, 8, (6, 15));
+  @include gs-float(s, left, (4, 15));
+  // width: gs-adjust(d, gs-gutter(d), (4, 9), true);
+  &:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+.float-right {
+  @include gs-float(s, right);
+  @include gs-float(d, right);
+  @include gs-float(l, right);
+  margin-left: 0;
+}
+
+.float-left {
+  @include gs-float(s, left);
+  @include gs-float(d, left);
+  @include gs-float(l, left);
+  margin-left: 0;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.l-clear {
+  clear: left;
+}
+
+// Mobile Media – below 767px reset to stack all elements
+
+// Journal layout styling
+
+
+
+// .meta {
+//   @include gs-span(d, 4, 14, (1, 15));
+//   @include gs-float(d, left, (1, 15));
+//   margin-left: gs-marginleft(d, 4, false, true);
+//   ul {
+//     @include gs-media(m, max) {
+//       clear: both;
+//     }
+
+//     &.share {
+//       @include gs-span(s, 4, 6, (4, 14));
+//       @include gs-float(s, left, (4, 14));
+//     }
+//     &.tags {
+//       @include gs-span(s, 7, 14, (4, 14));
+//       @include gs-float(s, left, (4, 14));
+//       margin-right: 0px;
+//     }
+//   }
+// }
+
+

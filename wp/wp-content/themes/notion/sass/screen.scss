@@ -1,0 +1,1114 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Style Imports - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+// Main Grid import
+@import "mix";
+
+// Compass Imports – http://compass-style.org/
+@import "compass/css3";
+@import "compass/css3/border-radius";
+@import "compass/typography";
+@import "compass/css3/transition";
+
+// Personal Imports
+@import "variables";
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Mixin Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+@mixin body-width {
+  margin: $center;
+  width: $body-width;
+  display: block;
+}
+
+@mixin full-width {
+  float: left;
+  width: $span-full;
+  display: block;
+}
+
+@mixin pad-top-bottom {
+  padding: 10px 0;
+}
+
+@mixin list-inline {
+  display: inline;
+  list-style: none;
+  width: auto;
+}
+
+@mixin gutter-push-right {
+  padding-right: 2.68%;
+}
+
+@mixin button {
+  height: 38px;
+  width: 38px;
+  text-indent: -9999px;
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+@mixin long-button {
+  padding: 0px 0px 0 0px;
+  padding-bottom: 1px;
+  border: none;
+  cursor: pointer;
+  @include border-radius(2px, 2px);
+  @include single-transition(0.2s, ease-in-out);
+  background-color: none;
+  text-indent: -9999px;
+  display: inline-block;
+  background-image: no-repeat;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+.push-gutter {
+  padding-left: 2.68%;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Simple Reset - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+html,body,h1,div,div, a, li, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: sans-serif;
+  font-family: $font;
+  color: $navy;
+  text-decoration: none;
+  font-style: normal;
+  list-style-type: none;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Notion Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Typography - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+// Headers
+
+@import "type";
+
+// Body Copy
+
+// List styles
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Structure - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+// Page structure:  section.wrapper > header > div.nav ^ span.logo nav ^^ section.panel > div.row > aside.left-aside ^ div.content ^ article ^^ footer
+
+// Global
+
+body {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+  @include gs-media(m, max) {
+    position: absolute;
+    margin-top: 5%;
+    min-height: 1px;
+  }
+}
+
+.nav-fix {
+position: fixed;
+width: 90%;
+display: block;
+max-width: 1600px;
+margin: 0 auto;
+}
+
+nav {
+float: right;
+  @include gs-media(m, max) {
+    position: absolute;
+    width: 100%;
+    margin-left: -8%;
+    display: none;
+    right: 0px;
+  }
+}
+
+nav ul {
+  margin-top: 7px;
+  @include gs-media(m, max) {
+    top: 20px;
+    margin: 12px 0 0 0;
+    padding: 0px 0;
+  }
+
+  li {
+    display: inline;
+    padding-left: 30px;
+    font-family: $light;
+    text-transform: uppercase;
+    margin-top: 6px;
+    @include gs-media(m, max) {
+      display: block;
+      top: 54px;
+      padding: 4px 0px 9px 6.5%;
+      border-bottom: solid 1px #f9a395;
+      margin: 0px;
+      padding-top: 10px;
+      @include single-transition(0.2s, ease-in-out);
+    }
+
+    &:hover {
+      @include gs-media(m, max) {
+        background: #f9a395;
+      }
+    }
+    &:first-child {
+      @include gs-media(m, max) {
+        padding-top: 10px;
+      }
+    }
+    &:last-child {
+      @include gs-media(m, max) {
+        border-bottom: 0px;
+        padding-bottom: 12px;
+      }
+    }
+    a {
+      font-family: $regular;
+      font-size: 13px;
+    }
+  }
+}
+
+a {
+  @include single-transition(0.2s, ease-in-out);
+  &:hover {
+    @include single-transition(0.2s, ease-in-out);
+  }
+}
+
+a.logo {
+  display: block;
+}
+
+p.size-2 {
+  padding-bottom: 0px;
+  margin-bottom: 6px;
+  a {
+    border-bottom: dotted 1px $orange;
+    font-family: $light;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+figure {
+  margin: -40px 0 30px 0;
+  padding: 0px 0 0 0;
+  font-size: 14px;
+  color: $orange;
+  @include gs-media(m, max) {
+    display: none;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal !important;
+  text-shadow: 0 0 0;
+}
+
+// Header
+
+header {
+  @include body-width;
+  z-index: 200;
+  top: 0px;
+  height: 150px;
+  width: 100%;
+  .row {
+    margin-top: 60px;
+    @include gs-media(m, max) {}
+  }
+  &.panel {
+    padding-bottom: 0px;
+  }
+  // Mobible Styles for nav
+  @include gs-media(m, max) {
+    margin: 0px 0px 0px -5%;
+    background: $navy;
+    position: absolute;
+    width: 90%;
+    padding: 0.2% 5% 0% 5%;
+    height: 72px;
+  }
+
+  // Links and Nav Elements including logo
+  a {
+    color: $orange;
+    margin: 0px;
+    padding: 10px 15px;
+    margin: -10px -15px;
+    font-family: $regular;
+    letter-spacing: 0.1em;
+    &:hover {
+      color: $navy;
+      background-color: rgba(240, 240, 240, 0);
+      padding: 10px 15px;
+      margin: -10px -15px;
+    }
+  }
+}
+
+div.logo {
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 90px;
+  height: 25px;
+  background: url(/wp-content/themes/notion/img/logo.svg) no-repeat;
+  background-size: 90px 25px;
+  display: inline-block;
+  @include gs-media(t, max) {
+    position: absolute;
+  }
+
+  @include gs-media(m, max) {
+    &.logo {
+      background: url(/wp-content/themes/notion/img/logo_white.svg) no-repeat;
+      position: absolute;
+      top: 25px;
+    }
+  }
+}
+
+// Body
+
+.row {
+  @include body-width;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.panel {
+  @include full-width;
+  padding-bottom: 56px;
+  @include gs-media(m, max) {
+    padding-bottom: 12px;
+  }
+}
+
+article {
+  li {
+    margin: $half-gutter 0;
+    @include gs-media(t, max) {
+      margin: 12px 0;
+    }
+  }
+}
+
+// Aside
+
+aside {
+  margin-top: 8%;
+  position: fixed;
+  z-index: 100;
+  max-width: 550px;
+
+p {
+
+ max-width: 450px;
+
+}
+
+  @include gs-media(m, max) {
+    position: relative;
+    margin: 72px 0 0px 0;
+  }
+}
+
+aside.case-study-title {
+  position: relative;
+  margin-top: 24px;
+}
+
+// Footer
+
+footer {
+  padding-top: 5%;
+  padding-bottom: 12px;
+  @include gs-media(m, max) {
+    padding-top: 12px;
+  }
+
+  &.panel {
+    padding-bottom: 12px;
+    background: white;
+    z-index: 630;
+    position: relative;
+  }
+  ul {
+    @include list-inline;
+    li {
+      @include list-inline;
+      padding-right: 30px;
+      @include gs-media(m, max) {
+        padding-right: 15px;
+      }
+
+      font-size: 14px;
+      a {
+        font-family: $regular;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+      &:last-child {
+        padding-right: 0px;
+      }
+      &.copyright {
+        font-size: 12px;
+        color: $orange;
+      }
+    }
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page Elements - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+// Images
+
+img {
+  // width: $span-full;
+  width: 100.09%;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page Specific Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+// Home Page
+
+.image-hover:hover {
+  z-index: 100;
+  height: 18%;
+  width: 18%;
+  position: absolute;
+  background: $light-blue;
+}
+
+// Project Page
+
+.case-study {
+  &.panel {
+    padding: 56px 0 112px 0;
+  }
+  ul {
+    li {
+      margin-top: $half-gutter;
+      margin-bottom: $half-gutter;
+      &.info {
+        margin-top: 16%;
+      }
+    }
+  }
+}
+
+// Studio Page
+
+.case-study, .studio {
+  position: relative;
+  z-index: 200;
+  color: $white;
+  background: $navy;
+  padding-top: 56px;
+  @include gs-media(m, max) {
+    z-index: 1;
+  }
+
+  .orange {
+    color: $orange;
+  }
+  .container {
+    display: block;
+    float: left;
+  }
+  h3 {
+    border-bottom: solid 1px $orange;
+    display: inline-block;
+    &.no-border {
+      line-height: 20px;
+      margin-right: 50px;
+    }
+  }
+  h2, h4, p, a, li {
+    color: $white;
+  }
+  li {
+    padding-top: 0px;
+  }
+  h3, p {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+}
+
+img.profile {
+  @include border-radius(50%);
+  border: solid 5px $navy;
+  @include single-transition(0.2s, ease-in-out);
+  &:hover {
+    border: solid 5px #363b3f;
+    padding: 0px;
+    @include single-transition(0.2s, ease-in-out);
+    cursor: pointer;
+  }
+}
+
+ul {
+  &.social {
+    margin-top: 30px;
+    li {
+      display: inline;
+      margin-right: 6px;
+    }
+  }
+  &.twelve {
+    padding: 28px 0;
+  }
+  &.staff {
+    padding-top: 0px;
+  }
+}
+
+div.intro {
+  color: $orange;
+  margin-top: 11px;
+}
+
+p.studio-intro {
+  margin-left: -25.4%;
+  margin-top: 30px;
+  @include gs-media(t, max) {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  @include gs-media(m, max) {
+    margin-left: 0px;
+  }
+}
+
+.clients {
+  min-height: 70px;
+  background: url(/wp-content/themes/notion/img/clients.svg) no-repeat;
+  background-size: 90%;
+  background-position: 50% 50%;
+  padding-top: 0px;
+  padding: 24px;
+  @include border-radius(2px);
+  margin-top: -6%;
+  background-color: #353b42;
+}
+
+// Work Page
+
+// Journal Page
+
+.journal {
+  @include gs-media(m, max) {
+    p {
+      margin-top: 0px;
+      margin-bottom: 24px;
+      padding-top: 0px;
+    }
+  }
+}
+
+section.journal div.intro {
+  @include gs-media(m, max) {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    p {
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+  }
+}
+
+// Overview page
+
+.over-view {
+  position: absolute;
+  margin-top: 8%;
+  p {
+    margin-right: 8%;
+  }
+}
+
+a.tag {
+  margin-right: 10px;
+}
+
+.journal {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+article.journal {
+  margin-top: 50px;
+  img {
+    width: auto;
+    &.size-full {
+      width: 100%;
+      height: auto;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      @include gs-media(m, max) {
+        clear: both;
+        width: 100%;
+        padding: 0px;
+      }
+    }
+    &.size-medium {
+      width: 45%;
+      height: auto;
+      padding-right: 4%;
+      float: left;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      @include gs-media(m, max) {
+        clear: both;
+        width: 100%;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+.journal-aside {
+  position: absolute;
+  @include gs-media(m, max) {
+    position: relative;
+  }
+}
+
+.meta {
+  ul {
+    border-bottom: dotted $orange 1px;
+    padding-bottom: 6px;
+    padding-top: 48px;
+    text-transform: uppercase;
+    li {
+      font-size: 12px;
+      color: $orange;
+      display: inline;
+      padding-right: 3%;
+    }
+    a {
+      font-family: $semi;
+    }
+    a:hover {
+      color: $navy;
+    }
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+ul.social li {
+  display: inline-block;
+  background-color: #353b42;
+  margin-top: -2px;
+  @include border-radius(2px, 2px);
+  @include single-transition(0.2s, ease-in-out);
+  &:hover {
+    background-color: #fff;
+    @include single-transition(0.2s, ease-in-out);
+  }
+}
+
+a.social {
+  @include button;
+  &.twitter {
+    background: url(/wp-content/themes/notion/img/twitter.svg) no-repeat;
+  }
+  &.facebook {
+    background: url(/wp-content/themes/notion/img/facebook.svg) no-repeat;
+  }
+  &.tumblr {
+    background: url(/wp-content/themes/notion/img/tumblr.svg) no-repeat;
+  }
+}
+
+.circle-button {
+  border: 2px solid $orange;
+  @include button;
+  @include border-radius(48px, 48px);
+  position: fixed;
+  margin-top: 10%;
+}
+
+.down {
+  background: url(/wp-content/themes/notion/img/arrow.svg) no-repeat;
+}
+
+.top {
+  background: url(/wp-content/themes/notion/img/arrow.svg) no-repeat;
+  -webkit-transform: rotate(180deg);
+  /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);
+  /* FF */
+  -o-transform: rotate(180deg);
+  /* Opera */
+  -ms-transform: rotate(180deg);
+  /* IE9 */
+  transform: rotate(180deg);
+  right: 100px;
+  display: none;
+}
+
+.down.active {
+  -webkit-transform: rotate(180deg);
+  /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);
+  /* FF */
+  -o-transform: rotate(180deg);
+  /* Opera */
+  -ms-transform: rotate(180deg);
+  /* IE9 */
+  transform: rotate(180deg);
+}
+
+li.trigger {
+  margin-top: 30px;
+  width: 122px;
+  padding: 0px;
+  padding-bottom: 0px;
+  border: none;
+  cursor: pointer;
+  @include border-radius(2px, 2px);
+}
+
+li.twitter {
+  a {
+    @include long-button;
+    min-width: 120px;
+    min-height: 38px;
+    background-image: url(/wp-content/themes/notion/img/tweet-text.svg);
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+li.facebook {
+  a {
+    border-bottom: none;
+    @include long-button;
+    min-width: 120px;
+    min-height: 38px;
+    background-image: url(/wp-content/themes/notion/img/facebook-text.svg);
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+li.tumblr {
+  a {
+    border-bottom: none;
+    @include long-button;
+    min-width: 120px;
+    min-height: 38px;
+    background-image: url(/wp-content/themes/notion/img/tumblr-text.svg);
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+li.next {
+  a {
+    border-bottom: none;
+    @include long-button;
+    min-width: 120px;
+    min-height: 38px;
+    background-image: url(/wp-content/themes/notion/img/next.svg);
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+li.prev {
+  a {
+    border-bottom: none;
+  }
+  button {
+    @include long-button;
+    min-width: 120px;
+    min-height: 38px;
+    background-image: url(/wp-content/themes/notion/img/prev.svg);
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+li.trigger {
+  button {
+    @include long-button;
+    background-image: url(/wp-content/themes/notion/img/viewmap.svg);
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+ul.case-study-social {
+  margin-left: -24px;
+  li a {
+    border: 0px;
+    &:hover {
+      border-bottom: 0px;
+    }
+  }
+}
+
+input[type="submit"] {
+  height: 37px;
+  width: 37px;
+  background: $orange;
+  border: none;
+  margin-left: -4px;
+  @include border-right-radius(2px);
+  font-family: $bold;
+  color: $navy;
+  padding-bottom: 0px;
+}
+
+input[type="text"] {
+  height: 17px;
+  padding: 10px;
+  background: #353b42;
+  border: none;
+  width: 70%;
+  color: $orange;
+  @include border-left-radius(2px);
+  margin-top: 6px;
+  &:focus {
+    border: none;
+  }
+}
+
+textarea:focus {
+  border: none;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.hovertext {
+  position: relative;
+  z-index: 80;
+  background-color: $blue;
+  line-height: 0px;
+}
+
+.hovertext:hover {
+  @include single-transition(0.3s, ease-in-out);
+  background-color: $blue;
+  line-height: 0px;
+}
+
+h4.caption {
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  text-transform: normal;
+  z-index: 100;
+  font-family: $light;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  @include single-transition(0.3s, ease-in-out);
+}
+
+.hovertext img {
+  // @include single-transition(0.1s, ease-in-out);
+  -webkit-backface-visibility: hidden;
+  @include single-transition(0.3s, ease-in-out);
+}
+
+.hovered {
+  opacity: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+// @include single-transition(2s, ease-in-out);
+
+.map {
+  background: $orange;
+  display: block;
+  height: 500px;
+  left: 0;
+  margin-bottom: 56px;
+  padding-bottom: 40px;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Image Replacement - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+.mail {
+  background: url(/wp-content/themes/notion/img/mail.svg) no-repeat;
+  background-size: 14px 9px;
+  background-position: 0px 2px;
+}
+
+.small-twitter {
+  background: url(/wp-content/themes/notion/img/small-twitter.svg) no-repeat;
+  background-size: 15px 14px;
+  background-position: 0px 0px;
+}
+
+.small-tumblr {
+  background: url(/wp-content/themes/notion/img/small-tumblr.svg) no-repeat;
+  background-size: 15px 14px;
+  background-position: -1px 0px;
+}
+
+.mail a,
+.small-twitter a,
+.small-tumblr a {
+  margin-left: 20px;
+  &:hover {
+    border-bottom: dotted 1px $orange;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Fixers - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+.no-pad-top {
+  padding-top: 0px !important;
+}
+
+.no-pad-bottom {
+  padding-bottom: 0px !important;
+}
+
+.no-mar-bottom {
+  margin-bottom: 0px !important;
+}
+
+.clear-b {
+  clear: both;
+}
+
+.orange {
+  color: $orange;
+}
+
+.pad-top {
+  padding-top: 24px;
+}
+
+// Hiding Elements on mobile
+
+.hide-m {
+  @include gs-media(m, max) {
+    display: none;
+  }
+}
+
+br {
+  @include gs-media(m, max) {
+    display: none;
+  }
+}
+
+//  Fixes color lists on casestudy
+.case-study li a {
+  color: $orange;
+  border-bottom: dotted $orange 1px;
+  font-weight: lighter;
+  font-family: $light;
+  &:hover {
+    color: white;
+    font-family: $light;
+    font-weight: lighter;
+    border-bottom: dotted white 1px;
+  }
+}
+
+// Mobile fix for ul.twelve
+ul.twelve {
+  @include gs-media(m, max) {
+    padding: 12px 0;
+    margin: 0px;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Fixers - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+@include gs-media(m, max) {
+  .content, aside, article, .left-aside, .twelve, .ten, p, .nine, .eight, .seven, .six, .four, .five,
+  .three, .journal-aside, .intro, .journal-p, .twelve-offset, .five-offset, .two-up, .journal-aside, .meta, footer ul, .studio-intro, .over-view, .feature-image {
+    @include gs-span(m, 1);
+    float: left;
+    clear: both;
+    margin-left: 0px;
+    width: 100%;
+    position: relative;
+  }
+  .one {
+    width: 48px;
+    height: 48px;
+    clear: both;
+  }
+  .two {
+    width: auto;
+  }
+  ul.team {
+    width: auto;
+    float: left;
+    clear: both;
+  }
+  button.menu-icon {
+    background: url(/wp-content/themes/notion/img/menu_icon.svg) no-repeat;
+    background-position: 7px 7px;
+    padding: 16px 16px 10px 16px;
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    right: 6%;
+    top: 36%;
+    @include border-radius(3px);
+    cursor: pointer;
+    @include single-transition(0.3s, ease-in-out);
+  }
+  button.menu-icon:hover {
+    background-color: $navy;
+  }
+  span.mobile-menu {
+    ul {
+      background-color: $orange;
+      li {}
+    }
+    a {
+      padding: 0px;
+      margin: 0px;
+      color: white;
+    }
+    a:hover {
+      padding: 0px;
+      margin: 0px;
+    }
+    &.float-right {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  a#down {
+    display: none !important;
+  }
+  .clients {
+    min-height: 70px;
+    background: url(/wp-content/themes/notion/img/clients_m.svg) no-repeat;
+    background-size: 90%;
+    background-position: 50% 50%;
+    padding-top: 0px;
+    padding: 24px;
+    @include border-radius(2px);
+    margin-top: 4%;
+    background-color: #353b42;
+  }
+  aside {
+    width: 100%;
+  }
+}
+
+
+@include gs-media(s, min) {
+  nav.active {
+    display: block !important;
+  }
+}
+
+
+ul.testimonials {
+  margin-left: 50px;
+}
+
+@include gs-media(t, max) {
+  aside {
+    position: relative;
+    @include gs-span(t, 1, 7, (1, 12));
+    @include gs-float(t, left, (1, 12));
+    margin-bottom: 30px;
+  }
+  a#down {
+    display: none !important;
+  }
+  .case-study ul li.info {
+    margin-top: 0px;
+  }
+}
+
+
+button {
+  border: none;
+}
+
+// bx-slider
+
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 7.5%;
+  padding: 0;
+  *zoom: 1;
+  /*  z-index: -2;*/
+}
+
+.archive-posts {
+  margin-top: 30px;
+  @include gs-media(s, max) {
+    margin-top: 30px;
+    padding-bottom: 140px;
+  }
+
+  @include gs-media(m, max) {
+    margin-top: 60px;
+    padding-bottom: 24px;
+    border-bottom: dotted 1px $orange;
+    p {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.post {
+  border-bottom: dotted 1px $orange;
+}
+
+.post-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+// ul.address li  { padding: 0px; margin: 0px;}
